@@ -17,6 +17,15 @@ block content
             .col-xs-7
               include includes/tokenblock
 
+    .well.exercise-container
+      h2 Learning Exercises
+      h3 1. Transaction Integrity
+      p Change the amount of a transaction in Block 1 Peer A. Notice how the hash changes and the block becomes invalid.
+      h3 2. Verifying Balances
+      p Blockchain doesn't just store "balances"; it stores <strong>transactions</strong>. To know how much money Elizabeth has, you have to look through all previous blocks and add up all transactions where she was the recipient and subtract where she was the sender.
+      h3 3. Fraud Prevention
+      p If Peer A tries to change a transaction to give themselves more money, Peer B and C will immediately see that Peer A's hash for that block is different, and they will reject Peer A's version of the story.
+
   script.
     $(function() {
       setup(1, 1);

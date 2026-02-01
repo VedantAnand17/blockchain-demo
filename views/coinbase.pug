@@ -17,6 +17,15 @@ block content
           .col-xs-7
             include includes/coinbaseblock
 
+    .well.exercise-container
+      h2 Learning Exercises
+      h3 1. Money Creation
+      p Notice the <strong>Coinbase</strong> section in each block. This is how new currency is "minted" or created. In Bitcoin, the miner who successfully finds the hash gets a reward. Try changing the "To" field in Block 1's Coinbase to your name and re-mining the chain.
+      h3 2. Fixed Supply Mechanics
+      p Notice that in this demo, every block grants $100.00. In the real Bitcoin network, this reward halves every 210,000 blocks (roughly every 4 years). This is what makes it "deflationary".
+      h3 3. The Source of All Funds
+      p Look at the transactions in Block 2. Notice they use the money that was created in the Coinbase of Block 1. On a blockchain, every single coin can be traced back to the specific Coinbase transaction that created it.
+
   script.
     $(function() {
       setup(1, 1);
