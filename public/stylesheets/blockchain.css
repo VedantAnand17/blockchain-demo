@@ -44,3 +44,36 @@ input {
   border: 0;
   z-index: 20000;
 }
+
+.exercise-container {
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  border: 2px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.exercise-container h2 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.exercise-container h3 {
+  color: #555;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.exercise-container p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.exercise-container .label-info {
+  font-size: 0.9em;
+  padding: 5px 10px;
+}
+
