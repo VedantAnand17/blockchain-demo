@@ -17,6 +17,15 @@ block content
           .col-sm-10
             input#hash.form-control(type='text', disabled)
 
+    .well.exercise-container
+      h2 Learning Exercises
+      h3 1. The Digital Fingerprint
+      p Type something in the <strong>Data</strong> box. Notice how the <strong>Hash</strong> changes completely with even a single character change. This property is known as the <strong>Avalanche Effect</strong>.
+      h3 2. One-Way Street
+      p Modern hashing is designed so that you cannot "reverse" the hash to find the original data. Try to "guess" what data would produce a hash starting with "00".
+      h3 3. Fixed Length Output
+      p Notice that no matter how much text you paste into the Data box, the Hash is always exactly 64 hexadecimal characters (256 bits).
+
   script.
     function getText(block, chain) {
       return $('#data').val();

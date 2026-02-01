@@ -17,6 +17,15 @@ block content
             .col-xs-7
               include includes/block
 
+    .well.exercise-container
+      h2 Learning Exercises
+      h3 1. Decentralized Consensus
+      p Make a change in <strong>Peer A</strong>'s Block 5 and mine it. Notice that Peer A now has a different hash for Block 5 than <strong>Peer B</strong> and <strong>Peer C</strong>.
+      h3 2. Conflict Resolution
+      p In a real blockchain, Peer A would be ignored because Peer B and Peer C (the majority) agree on a different state. This is how the network prevents cheating!
+      h3 3. The 51% Attack
+      p If you were a malicious actor and controlled more than 50% of the peers (e.g., you changed the data in Peer A AND Peer B to the same "lie"), you could potentially convince the network that your version of history is the correct one.
+
   script.
     $(function() {
       setup(1, 1);

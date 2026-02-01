@@ -35,6 +35,15 @@ block content
             button#block1chain1mineButton.btn.btn-primary.ladda-button(data-style='expand-right')
               span.ladda-label #{__('Mine')}
 
+    .well.exercise-container
+      h2 Learning Exercises
+      h3 1. Mining a Block
+      p Change the <strong>Data</strong>. Notice how the background turns red and the Hash no longer starts with four zeros. This block is now "invalid". Click the <strong>Mine</strong> button. Watch the <strong>Nonce</strong> change rapidly until a hash with enough leading zeros is found.
+      h3 2. The Power of the Nonce
+      p The Nonce is just a random number used to find a hash that fits the network's difficulty. Try changing the Data slightly and guess a Nonce that would make it green. Is it easy?
+      h3 3. Immutable Data
+      p Once a block is mined, any change to its Data will invalidate it. This is why it's so hard to change history once it's written in a block!
+
   script.
     $(function() {
       $('#block1chain1number').bind('input propertychange', function() { updateHash(1, 1); });
